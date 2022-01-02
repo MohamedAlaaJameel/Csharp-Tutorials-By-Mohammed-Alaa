@@ -25,38 +25,8 @@ namespace Struct_and_Class_Init
     ف الاستركت ينفع تعمل بارمتريزد كونستركتور لوحده player(int xp)
     ف الكلاس لازم يكون في كونستركتور مش بياخد بارمتر لو هتعمل واحد بياخد بارمتر  player(){} player(int xp){}
 =============================================================================================
-        /*
-     شوية فروقات بين الاستركت والكلاس
-    Ctor:
-     public Player(int xp){...}
 
-
-    at this line → p1 = new Player(); 
-    Struct :
-    -no error
-    Class:
-    error you need to implement  empty ctor before paramterized one .
- 
-
-    Struct paramterized Ctor:
-
-    you must   init all struct members in that ctor .
-    field or prop :must be fully assigned before control returned to the called.
-     public Player(int xp)
-    {
-        PlayerName = "";
-        PlayerAge = 12;
-        Xp = 0;
-    }
-   
-    Class paramterized Ctor:
-    you can make it empty .. or assign some values .. as u want.
-
-
-
-
-     */
-    Diffrence bet Class and struct :
+     Diffrence bet Class and struct :
     memory:
     Struct :  val type - stored In Stack
     Class :   ref type - stored In Heap
@@ -159,7 +129,37 @@ namespace Struct_and_Class_Init
      
      
      */
+    /*
+ شوية فروقات بين الاستركت والكلاس
+Ctor:
+ public Player(int xp){...}
 
+
+at this line → p1 = new Player(); 
+Struct :
+-no error
+Class:
+error you need to implement  empty ctor before paramterized one .
+
+
+Struct paramterized Ctor:
+
+you must   init all struct members in that ctor .
+field or prop :must be fully assigned before control returned to the called.
+ public Player(int xp)
+{
+    PlayerName = "";
+    PlayerAge = 12;
+    Xp = 0;
+}
+
+Class paramterized Ctor:
+you can make it empty .. or assign some values .. as u want.
+
+
+
+
+ */
     public class BoyClass
     {
         public string name;
