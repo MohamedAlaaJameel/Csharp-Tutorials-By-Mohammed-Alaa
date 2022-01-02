@@ -24,6 +24,19 @@ namespace Struct_and_Class_Init
 
     ف الاستركت ينفع تعمل بارمتريزد كونستركتور لوحده player(int xp)
     ف الكلاس لازم يكون في كونستركتور مش بياخد بارمتر لو هتعمل واحد بياخد بارمتر  player(){} player(int xp){}
+    مثال بيوضح القصة : 
+
+    -------Class-ref type----------------------------------------
+    Button b = new Button(); //a reference type 
+    Button b2 = b; //another reference to the same object 
+    b2.Text = "Hello"; 
+    Console.WriteLine(b.Text); //This is now "Hello". 
+    -------Struct-value type----------------------------------------
+    Rectangle r = new Rectangle(); //a value type 
+    Rectangle r2 = r; //another value type: NOT the same Rectangle 
+    r2.Width = 50; 
+    Console.WriteLine(r.Width); //This is still 0. 
+
 =============================================================================================
 
      Diffrence bet Class and struct :
@@ -103,18 +116,6 @@ namespace Struct_and_Class_Init
     لكن ف الفاليو تايب لما تعمل كذا بيساوي كذا  
      كدا عندي 2 اوبجكت مخلتلفين وجواهم نفس القيم 
 =============================================================================================
-    مثال بيوضح القصة : 
-
-    -------Class-ref type----------------------------------------
-    Button b = new Button(); //a reference type 
-    Button b2 = b; //another reference to the same object 
-    b2.Text = "Hello"; 
-    Console.WriteLine(b.Text); //This is now "Hello". 
-    -------Struct-value type----------------------------------------
-    Rectangle r = new Rectangle(); //a value type 
-    Rectangle r2 = r; //another value type: NOT the same Rectangle 
-    r2.Width = 50; 
-    Console.WriteLine(r.Width); //This is still 0. 
 
 
 
