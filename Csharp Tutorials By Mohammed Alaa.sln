@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParamsTutorial", "ParamsTut
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Static Ctor", "Static Ctor\Static Ctor.csproj", "{5A85BC80-6BD4-4192-8176-D4CF98314E59}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Method Hiding", "Method Hiding\Method Hiding.csproj", "{AC763BE3-5E91-4A7B-AE84-8C709DB278DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{5A85BC80-6BD4-4192-8176-D4CF98314E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A85BC80-6BD4-4192-8176-D4CF98314E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A85BC80-6BD4-4192-8176-D4CF98314E59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC763BE3-5E91-4A7B-AE84-8C709DB278DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC763BE3-5E91-4A7B-AE84-8C709DB278DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC763BE3-5E91-4A7B-AE84-8C709DB278DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC763BE3-5E91-4A7B-AE84-8C709DB278DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
