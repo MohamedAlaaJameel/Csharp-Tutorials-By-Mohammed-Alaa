@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Static Ctor", "Static Ctor\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Method Hiding", "Method Hiding\Method Hiding.csproj", "{AC763BE3-5E91-4A7B-AE84-8C709DB278DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Method Parameters", "Method Parameters\Method Parameters.csproj", "{A0E38DAB-4013-4422-A60B-775922861647}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{AC763BE3-5E91-4A7B-AE84-8C709DB278DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC763BE3-5E91-4A7B-AE84-8C709DB278DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC763BE3-5E91-4A7B-AE84-8C709DB278DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0E38DAB-4013-4422-A60B-775922861647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0E38DAB-4013-4422-A60B-775922861647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0E38DAB-4013-4422-A60B-775922861647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0E38DAB-4013-4422-A60B-775922861647}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
