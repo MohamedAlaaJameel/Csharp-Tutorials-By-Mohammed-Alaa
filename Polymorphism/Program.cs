@@ -5,6 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 
 
+
+/*
+ fast revesion:
+
+ parent:virtual
+ childs:override
+
+ parent= new child();
+ parent.method();
+ */
+
 /*
  لو عندك حيوان 
 الحيوان بيمشي 
