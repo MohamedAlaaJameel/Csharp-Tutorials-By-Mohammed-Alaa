@@ -68,6 +68,69 @@ namespace Struct_and_Class_Init
     والدتا بتاعت الكلاس او الاوبجكت الموجود ف الهيب بيتمسح بالكوليكتور..
     كلام سهل 
 
+    كلام سهل بيوضح الفرق بين الرفرنس تايب والفاليو تايب:
+    int a,b;
+    a=b;
+    كدا القيمة هتتنقل فقط .
+    اي تغغير ف اي مش هياثر علي بي 
+
+    obj a= obj b;
+    كدا يعتبر نقلت ادرسات يعني التغيير  ف اوبجكت بي هياثر علي اوبجكت اي
+    زي البوينترات بالظبط .. 
+    ----------------
+    ركز هنا : 
+    لو غيرت الدتا ال جوة الاوبجكت الخاص بالكلاس من اي مكان 
+    الدتا هتتغير 
+    ليه ؟ 
+    لانه زي البوينتر .
+    مثلا : 
+      public static void changeName(Boy boy)
+        {
+            boy.name = "changed";
+        }
+    الدتا ال جوة الاوبجكت هتغغير
+    you didnot write ref & the data has been changed . 
+    لانك غيرت الداتا ال ف الهيب . 
+    struct is the same in this change. 
+    لو هتاكسس علي الاوبجكت بتاع الاستركت وكتبتله هتغير الدتا ال جواه برضه ..
+
+    طيب بما ان الرفرنس تايب بيتغير من جوة الفنكشن والفاليو تايب الاستركت برضه بيتغير بنفس 
+    الطريقة 
+
+            public static void changeName(BoyClass boy)//func.boy = main.boy//Ptr  address transfere
+        {
+            boy.name = "changed";//access the heap by the address.
+        }
+        public static void changeName(BoyStruct boy)//func.boy = main.boy//Ptr  address transfere
+        {
+            boy.name = "changed";//access the heap by the address.
+        }
+    الاتنين هيدو 
+    changed 
+    وانت اتلخبط ؟ 
+    الفرق الحقيقي ف نقطة واحدة 
+    ف النسخ 
+    
+    ف الرفرنس تايب لما بتعمل كذا بيساوي كذا 
+    الاتنين هيشاورو علي نفس المكان  
+    لكن ف الفاليو تايب لما تعمل كذا بيساوي كذا  
+     كدا عندي 2 اوبجكت مخلتلفين وجواهم نفس القيم 
+=============================================================================================
+    مثال بيوضح القصة : 
+
+    -------Class-ref type----------------------------------------
+    Button b = new Button(); //a reference type 
+    Button b2 = b; //another reference to the same object 
+    b2.Text = "Hello"; 
+    Console.WriteLine(b.Text); //This is now "Hello". 
+    -------Struct-value type----------------------------------------
+    Rectangle r = new Rectangle(); //a value type 
+    Rectangle r2 = r; //another value type: NOT the same Rectangle 
+    r2.Width = 50; 
+    Console.WriteLine(r.Width); //This is still 0. 
+=============================================================================================
+
+    
 
      
      
@@ -78,7 +141,14 @@ namespace Struct_and_Class_Init
      
      */
 
-
+    public class BoyClass
+    {
+        public string name;
+    }
+    public class BoyStruct
+    {
+        public string name;
+    }
     public struct Player
     {
         public string PlayerName { get; set; }
@@ -105,19 +175,39 @@ namespace Struct_and_Class_Init
     //        Xp = 0;
     //    }
     //}
+
+
     class Program
     {
         static void Main(string[] args)
         {
 
             Player p1 = new Player();//initu with empty ctor
-                   p1 = new Player(2);//init with param ctor
-                   p1 = new Player { Xp = 1 };//Object Initializer Syntax
-                   p1.PlayerAge = 1;
-                   p1.PlayerName = "m";
-                   p1.Xp = 1;
+            p1 = new Player(2);//init with param ctor
+            p1 = new Player { Xp = 1 };//Object Initializer Syntax
+            p1.PlayerAge = 1;
+            p1.PlayerName = "m";
+            p1.Xp = 1;
 
+            BoyClass boy = new BoyClass();
+            boy.name = "BoyClass";
+            changeName(boy);
+            Console.WriteLine(boy.name);
 
+            BoyStruct boystruct = new BoyStruct();
+            boy.name = "BoyStruct";
+            changeName(boystruct);
+            Console.WriteLine(boystruct.name) ;
+    
+        }
+        public static void changeName(BoyClass boy)//func.boy = main.boy//Ptr  address transfere
+        {
+            boy.name = "changed";//access the heap by the address.
+        }
+        public static void changeName(BoyStruct boy)//func.boy = main.boy//Ptr  address transfere
+        {
+            boy.name = "changed";//access the heap by the address.
         }
     }
 }
+      
