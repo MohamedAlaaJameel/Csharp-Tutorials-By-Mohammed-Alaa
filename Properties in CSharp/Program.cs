@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Properties_in_CSharp
 {
-    //Encapsulation of fields by setters and getters 
+    //Encapsulation of fields by properties(setters and getters). 
 
     /*
     Don't use fields , use Properties:
