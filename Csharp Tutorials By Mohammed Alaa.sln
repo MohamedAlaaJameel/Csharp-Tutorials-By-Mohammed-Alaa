@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Method overloading", "Metho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Properties in CSharp", "Properties in CSharp\Properties in CSharp.csproj", "{5058F39B-5ED5-4368-A2F4-A005469B9D90}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Struct and Class Init", "Struct and Class Init\Struct and Class Init.csproj", "{64E549C7-C5BE-4626-BC7E-3BDA15383BF8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{5058F39B-5ED5-4368-A2F4-A005469B9D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5058F39B-5ED5-4368-A2F4-A005469B9D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5058F39B-5ED5-4368-A2F4-A005469B9D90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64E549C7-C5BE-4626-BC7E-3BDA15383BF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E549C7-C5BE-4626-BC7E-3BDA15383BF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64E549C7-C5BE-4626-BC7E-3BDA15383BF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64E549C7-C5BE-4626-BC7E-3BDA15383BF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
