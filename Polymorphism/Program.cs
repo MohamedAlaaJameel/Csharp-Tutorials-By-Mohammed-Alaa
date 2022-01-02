@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 /*
  fast revesion:
-
+To call method in childrens by base class obj. = polymorphism
  parent:virtual
  childs:override
 

@@ -12,5 +12,14 @@ namespace Polymorphism
         {
             Console.WriteLine("Cat walking");
         }
+
+        //public new void Walk()
+        //{
+        //    Console.WriteLine("Cat walking");
+        //}
+        //it will hide the parent method .. but  Animal cat = new Cat();
+        //cat.Walk will call the parent walk .. not the cat walk take care . take care . 
+        
+
     }
 }
