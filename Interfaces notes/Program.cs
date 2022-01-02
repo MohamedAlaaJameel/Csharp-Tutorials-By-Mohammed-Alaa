@@ -37,6 +37,18 @@ namespace Interfaces_notes
      
      
      */
+
+    /*
+     explicit interface implementation:
+     used when 2 interfaces have the same method name.
+     
+    to call the func use (cast-iface ptr)
+     type cast:
+           ((Icontroller)this).Print();
+    iface ptr:
+      Icontroller controller = new Program();
+      controller.Print();
+     */
     public interface Icontroller
     {
           void Print();
@@ -56,7 +68,13 @@ namespace Interfaces_notes
         {
             Program bla= new Program();
             bla.Printfa();
-          
+
+            Icontroller controller = new Program();
+            controller.Print();
+
+
+            Icontroller2 controller2 = new Program();
+            controller2.Print();
         }
 
          void Icontroller2.Print()
@@ -66,8 +84,8 @@ namespace Interfaces_notes
 
         public void Printfa()
         {
-            ((Icontroller)this).Print();
-            ((Icontroller2)this).Print();
+            ((Icontroller)this).Print(); // لاحظ عشان استعمل الاكسبلست  لازم اعمل كاست 
+            ((Icontroller2)this).Print();// explicit interface implementation
             Print();
         }
 
