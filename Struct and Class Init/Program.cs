@@ -11,6 +11,11 @@ namespace Struct_and_Class_Init
     /*
  =============================================================================================
     الخلاصة  :
+    structs can't inherit at all.
+    class can inherit from one class only .
+    to prevent class inheritance mark class with  Sealed keyword.
+    structs are sealed types by default.
+    both can implement interfaces.
     الرفرنس تايب لما بتساويه بحاجة تانية كلهم هيشاورو علي نفس المكان ف الهيب او الميموري
     الفاليو تايب بيتعمل متغير جديد جوة الاستاك ف كل مرة 
 
@@ -26,6 +31,10 @@ namespace Struct_and_Class_Init
     ف الكلاس لازم يكون في كونستركتور مش بياخد بارمتر لو هتعمل واحد بياخد بارمتر  player(){} player(int xp){}
     مثال بيوضح القصة : 
 
+    struct can't contain empty ctor;
+    class can.
+
+
     -------Class-ref type----------------------------------------
     Button b = new Button(); //a reference type 
     Button b2 = b; //another reference to the same object 
@@ -36,6 +45,8 @@ namespace Struct_and_Class_Init
     Rectangle r2 = r; //another value type: NOT the same Rectangle 
     r2.Width = 50; 
     Console.WriteLine(r.Width); //This is still 0. 
+
+    Destructors: Used With Class only . 
 
 =============================================================================================
 
@@ -174,6 +185,7 @@ you can make it empty .. or assign some values .. as u want.
         public string PlayerName { get; set; }
         public int PlayerAge { get; set; }
         public int Xp { get; set; }
+ 
         public Player(int xp)
         {
             PlayerName = "";
