@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Struct and Class Init", "St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces notes", "Interfaces notes\Interfaces notes.csproj", "{2DE2217C-C900-413B-B17F-8931F3C7A4F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstract Classes + important notes", "Abstract Classes\Abstract Classes + important notes.csproj", "{956203D0-AE49-40F5-A45E-F214AF5263BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{2DE2217C-C900-413B-B17F-8931F3C7A4F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DE2217C-C900-413B-B17F-8931F3C7A4F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DE2217C-C900-413B-B17F-8931F3C7A4F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{956203D0-AE49-40F5-A45E-F214AF5263BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{956203D0-AE49-40F5-A45E-F214AF5263BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{956203D0-AE49-40F5-A45E-F214AF5263BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{956203D0-AE49-40F5-A45E-F214AF5263BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
