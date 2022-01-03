@@ -18,13 +18,28 @@ namespace Abstract_Classes
     public abstract :دي الاوفر رايد عليها اجباري 
     normal Func: دي لازم تكون ببلك فقط 
 
+    ينفع تعمل ابستراكت كلاس وارثة من ابستراكت تانية 
+    ينفع تورث من انترفيس عادي
+
     عشان تعمل كول لاي فنكشن ف الابستراكت كلاس بتورث منها وتعمل اوبجكت من الوارث وتعمل كول 
     مثلا : 
 
-     
-     
-     
-     
+         public abstract class SharedData
+    {
+ 
+         public  abstract void Print(); تعريف البودي احباري ف الوارث
+         public virtual void Print2() {; } تعريف البودي اختياري ف الوارث
+         public void doprint() بيتعملها كول فقط وممكن يتعملها هايد 
+         {
+             Console.WriteLine("123");
+         }
+    }
+
+           class Program: SharedData
+           Program p = new Program();
+           p.doprint();
+           p.Print();
+           p.Print2();
      */
 
 
@@ -75,7 +90,7 @@ Method hiding:
  then the compiler will automatically hide the method of the base class.
 
 
-*/ 
+*/
     #endregion
 
     /*
