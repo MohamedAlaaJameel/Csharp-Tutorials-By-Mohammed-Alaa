@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstract Classes + importan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multiple class inheritance using interfaces", "Multiple class inheritance using interfaces\Multiple class inheritance using interfaces.csproj", "{0724791F-EE36-4540-936B-B60B13E763BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates Important notes", "Delegates Important notes\Delegates Important notes.csproj", "{08786302-A37C-4295-9F63-F18642617506}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{0724791F-EE36-4540-936B-B60B13E763BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0724791F-EE36-4540-936B-B60B13E763BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0724791F-EE36-4540-936B-B60B13E763BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08786302-A37C-4295-9F63-F18642617506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08786302-A37C-4295-9F63-F18642617506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08786302-A37C-4295-9F63-F18642617506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08786302-A37C-4295-9F63-F18642617506}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
