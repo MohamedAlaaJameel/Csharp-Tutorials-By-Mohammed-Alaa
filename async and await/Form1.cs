@@ -76,7 +76,8 @@ namespace async_and_await
             Task t1 = new Task(ConsumingTimeFunction);
             button1.Text = "processing";
             t1.Start();
-            await t1;
+            await t1;// custom await location ....
+            //await Task.Run(new Action(ConsumingTimeFunction)); at one line
             button1.Text = "done";
 
         }
